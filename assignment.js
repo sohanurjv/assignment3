@@ -1,22 +1,22 @@
 // feetToMile
 function feetToMile(feet){
     if(feet < 0){
-        return "negative number doesn't support";
+        return "negative number doesn't support"; /*if you insert a negative value*/
     }
-    // var mile = feet * 0.000189394; (another calculation)
     var mile = feet / 5280;
-    // var fixedMile = mile.toFixed(2);anoter way to fixed the number
     return mile.toFixed(2);
 }
+// for check
 var jhankarVaiResultMile = feetToMile(-10000);
 console.log("jhankar vai apnar Mile value is:", jhankarVaiResultMile);
+
 
 
 
 // woodCalculator
 function woodCalculator(chair, table, khat){
     const isValid = (value) => {
-        if(value < 0 || value == undefined){
+        if(value < 0 || value == undefined){ /*if you insert a negative value or you forget to insert a value, the result will be 0*/
            return 0;
         }
         else{
@@ -30,8 +30,11 @@ function woodCalculator(chair, table, khat){
     var totalWoodAmount = chairWoodAmount + tableWoodAmount + khatWoodAmount;
     return totalWoodAmount;
 }
+// for check
 var jhankarVaiOrder = woodCalculator(2, 2, 2);
-console.log("Jhankar vai er kath lagbe total:", jhankarVaiOrder, "cm^3");
+console.log("Jhankar vai er kath lagbe total:", jhankarVaiOrder, "cubic feet");
+
+
 
 // brickCalculator
  function brickCalculator(numberOfFloors){
@@ -50,6 +53,7 @@ console.log("Jhankar vai er kath lagbe total:", jhankarVaiOrder, "cm^3");
         }
      }
  }
+//  for check
  var buildingSize = brickCalculator(21);
  console.log('jhankar vai , brick lagbe :', buildingSize);
 
@@ -70,6 +74,7 @@ function tinyFriend(friendList){
         return shortestName;        
     }  
 }
+// for check
 var shortestName = tinyFriend(['abdul', 'kim', 'jack']);
 console.log("jhankar vai er tiny friend:", shortestName);
  
